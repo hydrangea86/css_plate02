@@ -38,7 +38,7 @@ header .inner-header {
 header .inner-header .logo {
     /* background: tomato; */
     flex: 1;
-    width: 170px;
+    width: 150px;
 }
 header .inner-header .logo a {
     display: block;
@@ -62,6 +62,7 @@ header .inner-header .menu-open {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -161,8 +162,8 @@ section.contents .main-text p span {
 
 /* project style */
 section.contents .project .top {
-    width: 65%;
-    margin: 200 auto 60px;
+    width: 70%;
+    margin: 200px auto 60px;
     /* background: tomato; */
     display: flex;
     justify-content: space-between;
@@ -179,6 +180,7 @@ section.contents .project .top a {
 section.contents .project ul {
     display: flex;
     justify-content: space-evenly;
+    margin: 0 10px;
 }
 section.contents .project ul li {
     height: 400px;
@@ -190,7 +192,7 @@ section.contents .project ul li a {
     width: 100%;
 }
 section.contents .project ul li a img {
-    width: 100%;
+    width: 97%;
 }
 section.contents .project ul li a::before {
     content: '';
@@ -237,4 +239,107 @@ section.contents .project ul li a .name span {
 }
 
 
+/* partner style */
 /* 연습 width size 25% flex nowarp  */
+section.contents .partner {
+    margin: 150px auto;
+    /* background: yellow; */
+    height: 350px;
+    
+
+}
+section.contents .partner h3{
+    font-size: 18px;
+    margin-bottom: 50px;
+    /* background: green; */
+    padding-left: 160px;
+    
+}
+section.contents .partner ul {
+    display: flex;
+    flex-flow: row wrap;
+    /* background: red; */
+    width: 70%;
+    height: 250px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+
+}
+section.contents .partner ul li{
+    /* background: pink; */
+    margin-right: 100px;
+    opacity: 0.6;
+
+}
+section.contents .partner ul li:hover {
+    opacity: 1;
+}
+
+section.contents .partner ul li:nth-child(4), section.contents .partner ul li:nth-child(8){
+    margin-right: 0;
+}
+
+/* contact style */
+section.contents .contact {
+    height: 700px;
+    background: red;
+    background:url('../img/contact.jpg') center/cover fixed;
+    position: relative;
+}
+section.contents .contact .inner{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-15%, -50%);
+
+}
+section.contents .contact .inner h3{
+    font-size: 16px;
+    margin-bottom: 35px;
+
+}
+section.contents .contact .inner p.tel{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+section.contents .contact .inner p{
+    font-size: 16px;
+}
+
+/* footer style */
+footer{
+    background: #1b1b1b;;
+}
+footer ul {
+    /* background: red; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 100px;
+}
+footer ul li:first-child {
+    flex: 2;
+    /* background: yellow; */
+    color: rgb(167, 154, 154);
+}
+footer ul li:nth-child(2) {
+    flex: 2;
+    /* background: green; */
+    color: rgb(255,255,255);
+    font-size: 18px;
+    line-height: 1.8;
+}
+footer ul li span {
+    color: rgb(167, 154, 154);
+    margin-right: 5px;
+}
+footer ul li:last-child {
+    flex: 0.8;
+    /* background: white; */
+    color: rgb(167, 154, 154);
+    font-weight: 700;
+}
+
